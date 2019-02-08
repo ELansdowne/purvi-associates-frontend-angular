@@ -7,9 +7,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from './shared/shared.module';
 import { LoginComponent } from './login/login/login.component';
 import { LoginModule } from './login/login.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { LayoutNavComponent } from './shared/components/layout-nav/layout-nav.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, DashboardComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
