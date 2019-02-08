@@ -37,6 +37,7 @@ import {
   NativeDateAdapter
 } from '@angular/material';
 import { LayoutNavComponent } from './components/layout-nav/layout-nav.component';
+import { HeaderComponent } from './components/header/header.component';
 const ANGULAR_MODULE: any[] = [FormsModule, ReactiveFormsModule];
 const ANGULAR_LAYOUT_MODULE: any[] = [FlexLayoutModule];
 const MATERIAL_MODULES: any[] = [
@@ -96,7 +97,7 @@ const SHARED_COMPONENTS: any[] = [
     ANGULAR_LAYOUT_MODULE,
     MATERIAL_MODULES
   ],
-  declarations: [LAYOUT_COMPONENTS, SHARED_COMPONENTS, LayoutNavComponent],
+  declarations: [LAYOUT_COMPONENTS, SHARED_COMPONENTS, LayoutNavComponent, HeaderComponent],
   entryComponents: [],
   providers: [
     { provide: DateAdapter, useClass: NativeDateAdapter }
