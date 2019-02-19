@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -13,7 +14,11 @@ export class LoginComponent implements OnInit {
     Validators.email
   ]);
   passwordFormControl = new FormControl('', [Validators.required]);
-  constructor() {}
+  constructor(private readonly router: Router) {}
 
   ngOnInit() {}
+  onLogin() {
+    console.log('deleteItem');
+    this.router.navigate(['/dashboard']);
+  }
 }
